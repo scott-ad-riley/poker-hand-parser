@@ -1,0 +1,217 @@
+﻿PokerStars Hand #179820625087:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:28:32 WET [2017/12/20 16:28:32 ET]
+Table 'Nusakan II' 6-max Seat #1 is the button
+Seat 1: Rascal3000 ($2 in chips) 
+Seat 2: rorrrr ($2.69 in chips) 
+Seat 3: Praide_161ru ($3.76 in chips) 
+Seat 4: lauti214 ($2 in chips) 
+Seat 5: motylek95 ($2.30 in chips) 
+Seat 6: Joaquinchi ($2.51 in chips) 
+rorrrr: posts small blind $0.01
+Praide_161ru: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [4h Kh]
+lauti214: folds 
+motylek95: folds 
+Joaquinchi: folds 
+Rascal3000: folds 
+rorrrr: calls $0.01
+Praide_161ru: raises $0.04 to $0.06
+rorrrr: calls $0.04
+*** FLOP *** [9d 9h Qh]
+rorrrr: checks 
+Praide_161ru: bets $0.10
+rorrrr: calls $0.10
+*** TURN *** [9d 9h Qh] [Ac]
+rorrrr: checks 
+Praide_161ru: checks 
+*** RIVER *** [9d 9h Qh Ac] [2d]
+rorrrr: checks 
+Praide_161ru: bets $0.31
+rorrrr: calls $0.31
+*** SHOW DOWN ***
+Praide_161ru: shows [5d 4c] (a pair of Nines)
+rorrrr: shows [4h Kh] (a pair of Nines - Ace+King kicker)
+rorrrr collected $0.91 from pot
+*** SUMMARY ***
+Total pot $0.94 | Rake $0.03 
+Board [9d 9h Qh Ac 2d]
+Seat 1: Rascal3000 (button) folded before Flop (didn't bet)
+Seat 2: rorrrr (small blind) showed [4h Kh] and won ($0.91) with a pair of Nines
+Seat 3: Praide_161ru (big blind) showed [5d 4c] and lost with a pair of Nines
+Seat 4: lauti214 folded before Flop (didn't bet)
+Seat 5: motylek95 folded before Flop (didn't bet)
+Seat 6: Joaquinchi folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #179820657170:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:29:13 WET [2017/12/20 16:29:13 ET]
+Table 'Nusakan II' 6-max Seat #2 is the button
+Seat 1: Rascal3000 ($2 in chips) 
+Seat 2: rorrrr ($3.13 in chips) 
+Seat 3: Praide_161ru ($3.29 in chips) 
+Seat 4: lauti214 ($2 in chips) 
+Seat 5: motylek95 ($2.30 in chips) 
+Seat 6: Joaquinchi ($2.51 in chips) 
+Praide_161ru: posts small blind $0.01
+lauti214: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [9c 5s]
+motylek95: folds 
+Joaquinchi: folds 
+Rascal3000: raises $0.04 to $0.06
+rorrrr: folds 
+Praide_161ru: raises $0.26 to $0.32
+lauti214: folds 
+Rascal3000: folds 
+Uncalled bet ($0.26) returned to Praide_161ru
+Praide_161ru collected $0.14 from pot
+*** SUMMARY ***
+Total pot $0.14 | Rake $0 
+Seat 1: Rascal3000 folded before Flop
+Seat 2: rorrrr (button) folded before Flop (didn't bet)
+Seat 3: Praide_161ru (small blind) collected ($0.14)
+Seat 4: lauti214 (big blind) folded before Flop
+Seat 5: motylek95 folded before Flop (didn't bet)
+Seat 6: Joaquinchi folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #179820673122:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:29:33 WET [2017/12/20 16:29:33 ET]
+Table 'Nusakan II' 6-max Seat #3 is the button
+Seat 1: Rascal3000 ($2 in chips) 
+Seat 2: rorrrr ($3.13 in chips) 
+Seat 3: Praide_161ru ($3.37 in chips) 
+Seat 4: lauti214 ($1.98 in chips) 
+Seat 5: motylek95 ($2.30 in chips) 
+Seat 6: Joaquinchi ($2.51 in chips) 
+lauti214: posts small blind $0.01
+motylek95: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [4s 5c]
+Joaquinchi: folds 
+Rascal3000: folds 
+rorrrr: folds 
+Praide_161ru: raises $0.05 to $0.07
+lauti214: folds 
+motylek95: folds 
+Uncalled bet ($0.05) returned to Praide_161ru
+Praide_161ru collected $0.05 from pot
+*** SUMMARY ***
+Total pot $0.05 | Rake $0 
+Seat 1: Rascal3000 folded before Flop (didn't bet)
+Seat 2: rorrrr folded before Flop (didn't bet)
+Seat 3: Praide_161ru (button) collected ($0.05)
+Seat 4: lauti214 (small blind) folded before Flop
+Seat 5: motylek95 (big blind) folded before Flop
+Seat 6: Joaquinchi folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #179820689577:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:29:54 WET [2017/12/20 16:29:54 ET]
+Table 'Nusakan II' 6-max Seat #4 is the button
+Seat 1: Rascal3000 ($2 in chips) 
+Seat 2: rorrrr ($3.13 in chips) 
+Seat 3: Praide_161ru ($3.40 in chips) 
+Seat 4: lauti214 ($1.97 in chips) 
+Seat 5: motylek95 ($2.28 in chips) 
+Seat 6: Joaquinchi ($2.51 in chips) 
+motylek95: posts small blind $0.01
+Joaquinchi: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [5h 9h]
+Rascal3000: folds 
+rorrrr: raises $0.02 to $0.04
+Praide_161ru: folds 
+lauti214: calls $0.04
+motylek95: folds 
+Joaquinchi: calls $0.02
+*** FLOP *** [Ac 4h 8d]
+Joaquinchi: checks 
+rorrrr: bets $0.06
+lauti214: folds 
+Joaquinchi: folds 
+Uncalled bet ($0.06) returned to rorrrr
+rorrrr collected $0.13 from pot
+rorrrr: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.13 | Rake $0 
+Board [Ac 4h 8d]
+Seat 1: Rascal3000 folded before Flop (didn't bet)
+Seat 2: rorrrr collected ($0.13)
+Seat 3: Praide_161ru folded before Flop (didn't bet)
+Seat 4: lauti214 (button) folded on the Flop
+Seat 5: motylek95 (small blind) folded before Flop
+Seat 6: Joaquinchi (big blind) folded on the Flop
+
+
+
+PokerStars Hand #179820716813:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:30:29 WET [2017/12/20 16:30:29 ET]
+Table 'Nusakan II' 6-max Seat #5 is the button
+Seat 1: Rascal3000 ($2 in chips) 
+Seat 2: rorrrr ($3.22 in chips) 
+Seat 3: Praide_161ru ($3.40 in chips) 
+Seat 4: lauti214 ($1.93 in chips) 
+Seat 5: motylek95 ($2.27 in chips) 
+Seat 6: Joaquinchi ($2.47 in chips) 
+Joaquinchi: posts small blind $0.01
+Rascal3000: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [4d 2d]
+rorrrr: folds 
+Praide_161ru has timed out
+Praide_161ru: folds 
+lauti214: raises $0.04 to $0.06
+motylek95: raises $0.14 to $0.20
+Joaquinchi: folds 
+Rascal3000: folds 
+lauti214: folds 
+Uncalled bet ($0.14) returned to motylek95
+motylek95 collected $0.15 from pot
+motylek95: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.15 | Rake $0 
+Seat 1: Rascal3000 (big blind) folded before Flop
+Seat 2: rorrrr folded before Flop (didn't bet)
+Seat 3: Praide_161ru folded before Flop (didn't bet)
+Seat 4: lauti214 folded before Flop
+Seat 5: motylek95 (button) collected ($0.15)
+Seat 6: Joaquinchi (small blind) folded before Flop
+
+
+
+PokerStars Hand #179820751024:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:31:12 WET [2017/12/20 16:31:12 ET]
+Table 'Nusakan II' 6-max Seat #6 is the button
+Seat 1: Rascal3000 ($2 in chips) 
+Seat 2: rorrrr ($3.22 in chips) 
+Seat 3: Praide_161ru ($3.40 in chips) 
+Seat 4: lauti214 ($1.87 in chips) 
+Seat 5: motylek95 ($2.36 in chips) 
+Seat 6: Joaquinchi ($2.46 in chips) 
+Rascal3000: posts small blind $0.01
+rorrrr: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [4d 8h]
+Praide_161ru: raises $0.10 to $0.12
+lauti214: calls $0.12
+motylek95: folds 
+Joaquinchi: calls $0.12
+Rascal3000: folds 
+rorrrr: folds 
+*** FLOP *** [Ts 6s Td]
+Praide_161ru: bets $0.38
+lauti214: folds 
+Joaquinchi: folds 
+Uncalled bet ($0.38) returned to Praide_161ru
+Praide_161ru collected $0.38 from pot
+*** SUMMARY ***
+Total pot $0.39 | Rake $0.01 
+Board [Ts 6s Td]
+Seat 1: Rascal3000 (small blind) folded before Flop
+Seat 2: rorrrr (big blind) folded before Flop
+Seat 3: Praide_161ru collected ($0.38)
+Seat 4: lauti214 folded on the Flop
+Seat 5: motylek95 folded before Flop (didn't bet)
+Seat 6: Joaquinchi (button) folded on the Flop
+
+
+

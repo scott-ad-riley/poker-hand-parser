@@ -1,0 +1,200 @@
+﻿PokerStars Hand #179821215821:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:41:08 WET [2017/12/20 16:41:08 ET]
+Table 'Feodosia' 9-max Seat #3 is the button
+Seat 2: rorrrr ($2 in chips) 
+Seat 3: victor128422 ($0.50 in chips) 
+Seat 8: Rokep02 ($2 in chips) 
+Rokep02: posts small blind $0.01
+rorrrr: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [Jc 7s]
+Egar7495 joins the table at seat #4 
+victor128422: folds 
+Rokep02: folds 
+Uncalled bet ($0.01) returned to rorrrr
+rorrrr collected $0.02 from pot
+rorrrr: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.02 | Rake $0 
+Seat 2: rorrrr (big blind) collected ($0.02)
+Seat 3: victor128422 (button) folded before Flop (didn't bet)
+Seat 8: Rokep02 (small blind) folded before Flop
+
+
+
+PokerStars Hand #179821224679:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:41:20 WET [2017/12/20 16:41:20 ET]
+Table 'Feodosia' 9-max Seat #8 is the button
+Seat 2: rorrrr ($2.01 in chips) 
+Seat 3: victor128422 ($0.50 in chips) 
+Seat 8: Rokep02 ($2 in chips) 
+rorrrr: posts small blind $0.01
+victor128422: posts big blind $0.02
+Egar7495: sits out 
+*** HOLE CARDS ***
+Dealt to rorrrr [7s 9s]
+Rokep02: raises $0.04 to $0.06
+rorrrr: calls $0.05
+victor128422: folds 
+*** FLOP *** [7c 6h Qh]
+victor128422 leaves the table
+rorrrr: checks 
+Rokep02: checks 
+*** TURN *** [7c 6h Qh] [8c]
+rorrrr: bets $0.06
+Rokep02: calls $0.06
+*** RIVER *** [7c 6h Qh 8c] [Qs]
+Ehrenmann31 joins the table at seat #7 
+rorrrr: checks 
+Rokep02: checks 
+*** SHOW DOWN ***
+rorrrr: shows [7s 9s] (two pair, Queens and Sevens)
+Rokep02: shows [7d 9d] (two pair, Queens and Sevens)
+rorrrr collected $0.13 from pot
+Rokep02 collected $0.12 from pot
+*** SUMMARY ***
+Total pot $0.26 | Rake $0.01 
+Board [7c 6h Qh 8c Qs]
+Seat 2: rorrrr (small blind) showed [7s 9s] and won ($0.13) with two pair, Queens and Sevens
+Seat 3: victor128422 (big blind) folded before Flop
+Seat 8: Rokep02 (button) showed [7d 9d] and won ($0.12) with two pair, Queens and Sevens
+
+
+
+PokerStars Hand #179821252480:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:41:56 WET [2017/12/20 16:41:56 ET]
+Table 'Feodosia' 9-max Seat #8 is the button
+Seat 2: rorrrr ($2.02 in chips) 
+Seat 8: Rokep02 ($2 in chips) 
+Egar7495 will be allowed to play after the button
+Ehrenmann31 will be allowed to play after the button
+Rokep02: posts small blind $0.01
+rorrrr: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [Qd Qc]
+Rokep02: folds 
+Uncalled bet ($0.01) returned to rorrrr
+rorrrr collected $0.02 from pot
+rorrrr: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.02 | Rake $0 
+Seat 2: rorrrr (big blind) collected ($0.02)
+Seat 8: Rokep02 (button) (small blind) folded before Flop
+
+
+
+PokerStars Hand #179821256561:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:42:01 WET [2017/12/20 16:42:01 ET]
+Table 'Feodosia' 9-max Seat #8 is the button
+Seat 2: rorrrr ($2.03 in chips) 
+Seat 4: Egar7495 ($2 in chips) 
+Seat 8: Rokep02 ($2 in chips) 
+rorrrr: posts small blind $0.01
+Egar7495: posts big blind $0.02
+Ehrenmann31: sits out 
+*** HOLE CARDS ***
+Dealt to rorrrr [2s 7d]
+Rokep02: folds 
+rorrrr: folds 
+Uncalled bet ($0.01) returned to Egar7495
+Egar7495 collected $0.02 from pot
+*** SUMMARY ***
+Total pot $0.02 | Rake $0 
+Seat 2: rorrrr (small blind) folded before Flop
+Seat 4: Egar7495 (big blind) collected ($0.02)
+Seat 8: Rokep02 (button) folded before Flop (didn't bet)
+
+
+
+PokerStars Hand #179821262936:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:42:09 WET [2017/12/20 16:42:09 ET]
+Table 'Feodosia' 9-max Seat #2 is the button
+Seat 2: rorrrr ($2.02 in chips) 
+Seat 4: Egar7495 ($2.01 in chips) 
+Seat 7: Ehrenmann31 ($1.60 in chips) 
+Seat 8: Rokep02 ($2 in chips) 
+Egar7495: posts small blind $0.01
+Ehrenmann31: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [7c 4s]
+Rokep02: raises $0.04 to $0.06
+rorrrr: folds 
+Egar7495: folds 
+Ehrenmann31: folds 
+Uncalled bet ($0.04) returned to Rokep02
+Rokep02 collected $0.05 from pot
+*** SUMMARY ***
+Total pot $0.05 | Rake $0 
+Seat 2: rorrrr (button) folded before Flop (didn't bet)
+Seat 4: Egar7495 (small blind) folded before Flop
+Seat 7: Ehrenmann31 (big blind) folded before Flop
+Seat 8: Rokep02 collected ($0.05)
+
+
+
+PokerStars Hand #179821286433:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:42:39 WET [2017/12/20 16:42:39 ET]
+Table 'Feodosia' 9-max Seat #4 is the button
+Seat 2: rorrrr ($2.02 in chips) 
+Seat 4: Egar7495 ($2 in chips) 
+Seat 7: Ehrenmann31 ($1.58 in chips) 
+Ehrenmann31: posts small blind $0.01
+Rokep02: is sitting out 
+rorrrr: posts big blind $0.02
+Rokep02 leaves the table
+*** HOLE CARDS ***
+Dealt to rorrrr [2h Kd]
+Egar7495: raises $0.04 to $0.06
+Ehrenmann31: folds 
+rorrrr: calls $0.04
+*** FLOP *** [Jd 4c 4d]
+rorrrr: checks 
+Egar7495: bets $0.10
+Hansi0170 joins the table at seat #3 
+rorrrr: folds 
+Uncalled bet ($0.10) returned to Egar7495
+Egar7495 collected $0.13 from pot
+*** SUMMARY ***
+Total pot $0.13 | Rake $0 
+Board [Jd 4c 4d]
+Seat 2: rorrrr (big blind) folded on the Flop
+Seat 4: Egar7495 (button) collected ($0.13)
+Seat 7: Ehrenmann31 (small blind) folded before Flop
+
+
+
+PokerStars Hand #179821311514:  Hold'em No Limit ($0.01/$0.02 USD) - 2017/12/20 21:43:12 WET [2017/12/20 16:43:12 ET]
+Table 'Feodosia' 9-max Seat #7 is the button
+Seat 2: rorrrr ($1.96 in chips) 
+Seat 3: Hansi0170 ($2 in chips) 
+Seat 4: Egar7495 ($2.07 in chips) 
+Seat 7: Ehrenmann31 ($1.57 in chips) 
+rorrrr: posts small blind $0.01
+Hansi0170: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [Ks 4s]
+Egar7495: raises $0.04 to $0.06
+Ehrenmann31: folds 
+rorrrr: calls $0.05
+Hansi0170: folds 
+*** FLOP *** [5s 7d 5d]
+rorrrr: checks 
+Egar7495: checks 
+*** TURN *** [5s 7d 5d] [Kd]
+rorrrr: bets $0.08
+Egar7495: calls $0.08
+*** RIVER *** [5s 7d 5d Kd] [5h]
+rorrrr: bets $0.22
+Egar7495: raises $1.71 to $1.93 and is all-in
+rorrrr: calls $1.60 and is all-in
+Uncalled bet ($0.11) returned to Egar7495
+*** SHOW DOWN ***
+Egar7495: shows [Kh Ts] (a full house, Fives full of Kings)
+rorrrr: shows [Ks 4s] (a full house, Fives full of Kings)
+rorrrr collected $1.90 from pot
+Egar7495 collected $1.90 from pot
+ShaneRock147 joins the table at seat #1 
+*** SUMMARY ***
+Total pot $3.94 | Rake $0.14 
+Board [5s 7d 5d Kd 5h]
+Seat 2: rorrrr (small blind) showed [Ks 4s] and won ($1.90) with a full house, Fives full of Kings
+Seat 3: Hansi0170 (big blind) folded before Flop
+Seat 4: Egar7495 showed [Kh Ts] and won ($1.90) with a full house, Fives full of Kings
+Seat 7: Ehrenmann31 (button) folded before Flop (didn't bet)
+
+
+

@@ -1,0 +1,20 @@
+{
+  "name": "poker-hand-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "jest": "^22.0.4",
+    "prettier": "1.9.2"
+  }
+}
