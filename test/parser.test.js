@@ -23,3 +23,16 @@ test('can fetch our hand for a specific game', () => {
     { number: '7', suit: 's' }
   ])
 })
+
+test('can fetch our own pot size at the start and end', () => {
+  const parser = new Parser(testFileContents)
+  expect(parser.ownPotSize(0)).toEqual({
+    start: 200,
+    end: 202
+  })
+})
+
+test('can fetch the hand pot size at the end', () => {
+  const parser = new Parser(testFileContents)
+  expect(parser.potSize(0)).toEqual(2)
+})
