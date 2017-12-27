@@ -55,7 +55,7 @@ class Parser {
   }
 
   startingCards(handNumber = 0) {
-    const lineData = this.heroHandDealt(0)
+    const lineData = this.heroHandDealt(handNumber)
     const hand = cardsFromSet(
       lineData.substr(lineData.lastIndexOf('['), lineData.length)
     )
