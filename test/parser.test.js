@@ -16,7 +16,7 @@ test('can return the correct player of the game', () => {
   expect(parser.heroName()).toBe('rorrrr')
 })
 
-test('can fetch our hand for the first hand', () => {
+test('can fetch the hero hand for the first hand', () => {
   const parser = new Parser(testFileContents)
   expect(parser.heroHand()).toEqual([
     { number: 'J', suit: 'c' },
@@ -24,7 +24,7 @@ test('can fetch our hand for the first hand', () => {
   ])
 })
 
-test('can fetch our hand for a specific hand', () => {
+test('can fetch the hero hand for a specific hand', () => {
   const parser = new Parser(testFileContents)
   expect(parser.heroHand(3)).toEqual([
     { number: '2', suit: 's' },
@@ -32,7 +32,7 @@ test('can fetch our hand for a specific hand', () => {
   ])
 })
 
-test('can fetch our own pot size at the start and end for the first hand', () => {
+test('can fetch our own stack size before and after the first hand', () => {
   const parser = new Parser(testFileContents)
   expect(parser.heroPotSize()).toEqual({
     start: 200,
@@ -40,7 +40,7 @@ test('can fetch our own pot size at the start and end for the first hand', () =>
   })
 })
 
-test('can fetch our own pot size at the start and end for a specific hand', () => {
+test('can fetch our own stack size before and after a specific hand', () => {
   const parser = new Parser(testFileContents)
   expect(parser.heroPotSize(2)).toEqual({
     start: 202,
@@ -48,7 +48,7 @@ test('can fetch our own pot size at the start and end for a specific hand', () =
   })
 })
 
-test('can fetch the hand pot size at the end', () => {
+test('can fetch the hand pot size at the end of a hand', () => {
   const parser = new Parser(testFileContents)
   expect(parser.potSize(0)).toEqual(2)
 })
