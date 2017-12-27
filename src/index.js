@@ -22,6 +22,10 @@ class Parser {
     return this._currency || this.storeCurrency()
   }
 
+  isTournament() {
+    return this.parsedHands[0][0].includes('Tournament')
+  }
+
   heroName() {
     return this._name || this.storeName()
   }
@@ -43,6 +47,12 @@ class Parser {
       row => row.startsWith('Seat ') && row.includes(this.heroName())
     )
     const start = this.potFromRow(seatsData[0])
+    if (this.isTournament() && this.heroOutAt(handNumber)) {
+      return {
+        start,
+        end: 0
+      }
+    }
     const endGain = this.potFromRow(seatsData[1])
     return {
       start,
@@ -88,6 +98,12 @@ class Parser {
     return this.parsedHands[handNumber]
       .find(line => line.startsWith('Dealt to '))
       .split('Dealt to ')[1]
+  }
+
+  heroOutAt(handNumber) {
+    return this.parsedHands[handNumber].some(row =>
+      row.startsWith(`${this.heroName()} finished the tournament in`)
+    )
   }
 }
 

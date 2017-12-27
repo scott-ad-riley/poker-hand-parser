@@ -4,5 +4,5 @@ module.exports = function(field) {
     .replace(')', '')
     .split(' ')[0]
   if (money[0] === '$') return Number(money.slice(1)) * 100
-  return Number(money) * 100
+  return Number(money)
 }

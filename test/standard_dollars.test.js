@@ -17,6 +17,10 @@ describe('standard dollars game', () => {
     expect(parser.currency()).toBe('$')
   })
 
+  test('correctly determines if the game is a tournament game', () => {
+    expect(parser.isTournament()).toBe(false)
+  })
+
   test('can return the correct player of the game', () => {
     expect(parser.heroName()).toBe('rorrrr')
   })
