@@ -18,8 +18,12 @@ class Parser {
     return this.parsedHands.length
   }
 
+  currency() {
+    return this._currency || this.storeCurrency()
+  }
+
   heroName() {
-    return this.name || this.storeName()
+    return this._name || this.storeName()
   }
 
   heroHand(handNumber = 0) {
@@ -63,10 +67,21 @@ class Parser {
   }
 
   storeName(lineData) {
-    if (this.name) return this.name
+    if (this._name) return this._name
     if (lineData === undefined) lineData = this.heroHandDealt(0)
-    this.name = lineData.substr(0, lineData.lastIndexOf('[') - 1)
-    return this.name
+    this._name = lineData.substr(0, lineData.lastIndexOf('[') - 1)
+    return this._name
+  }
+
+  storeCurrency() {
+    if (this._currency) return this._currency
+    const rowData = this.parsedHands[0].find(row => row.startsWith('Seat '))
+    if (rowData.includes('($')) {
+      this._currency = '$'
+    } else {
+      this._currency = 'chips'
+    }
+    return this._currency
   }
 
   heroHandDealt(handNumber) {
