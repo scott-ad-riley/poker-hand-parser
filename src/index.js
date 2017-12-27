@@ -12,22 +12,21 @@ class Parser {
       .map(hand => hand.split('\n'))
   }
 
+  // public methods
+
   handCount() {
     return this.parsedHands.length
   }
 
-  ownPlayer() {
-    const { name } = this.startingCardAndName()
-    return name
+  heroName() {
+    return this.name || this.storeName()
   }
 
-  ownHand(handNumber = 0) {
-    const { hand } = this.startingCardAndName()
-    return hand
+  heroHand(handNumber = 0) {
+    return this.startingCards(handNumber)
   }
 
   potSize(handNumber = 0) {
-    this.storeName()
     const potData = this.parsedHands[handNumber].find(row =>
       row.startsWith('Total pot ')
     )
@@ -35,10 +34,9 @@ class Parser {
     return moneyInsideBrackets(field)
   }
 
-  ownPotSize(handNumber = 0) {
-    this.storeName()
+  heroPotSize(handNumber = 0) {
     const seatsData = this.parsedHands[handNumber].filter(
-      row => row.startsWith('Seat ') && row.includes(this.name)
+      row => row.startsWith('Seat ') && row.includes(this.heroName())
     )
     const start = this.potFromRow(seatsData[0])
     const endGain = this.potFromRow(seatsData[1])
@@ -48,30 +46,30 @@ class Parser {
     }
   }
 
+  // private/internal methods
+
   potFromRow(row) {
     const matches = row.match(/(\([^\)]+\))/g)
     const rawField = matches[matches.length - 1]
     return moneyInsideBrackets(rawField)
   }
 
-  startingCardAndName(handNumber = 0) {
-    const lineData = this.ownHandDealt(0)
-    const name = lineData.substr(0, lineData.lastIndexOf('[') - 1)
+  startingCards(handNumber = 0) {
+    const lineData = this.heroHandDealt(0)
     const hand = cardsFromSet(
       lineData.substr(lineData.lastIndexOf('['), lineData.length)
     )
-    if (!this.name) this.name = name
-    return { name, hand }
+    return hand
   }
 
-  // easy way to cache the current player's name
-  storeName(lineData = this.ownHandDealt(0)) {
+  storeName(lineData) {
     if (this.name) return this.name
+    if (lineData === undefined) lineData = this.heroHandDealt(0)
     this.name = lineData.substr(0, lineData.lastIndexOf('[') - 1)
     return this.name
   }
 
-  ownHandDealt(handNumber) {
+  heroHandDealt(handNumber) {
     return this.parsedHands[handNumber]
       .find(line => line.startsWith('Dealt to '))
       .split('Dealt to ')[1]

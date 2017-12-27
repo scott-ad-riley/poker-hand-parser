@@ -13,12 +13,12 @@ test('can count the number of hands in a file', () => {
 
 test('can return the correct player of the game', () => {
   const parser = new Parser(testFileContents)
-  expect(parser.ownPlayer()).toBe('rorrrr')
+  expect(parser.heroName()).toBe('rorrrr')
 })
 
 test('can fetch our hand for a specific game', () => {
   const parser = new Parser(testFileContents)
-  expect(parser.ownHand(1)).toEqual([
+  expect(parser.heroHand()).toEqual([
     { number: 'J', suit: 'c' },
     { number: '7', suit: 's' }
   ])
@@ -26,7 +26,7 @@ test('can fetch our hand for a specific game', () => {
 
 test('can fetch our own pot size at the start and end', () => {
   const parser = new Parser(testFileContents)
-  expect(parser.ownPotSize(0)).toEqual({
+  expect(parser.heroPotSize(0)).toEqual({
     start: 200,
     end: 202
   })
