@@ -42,7 +42,7 @@ class Parser {
     return moneyInsideBrackets(field)
   }
 
-  heroPotSize(handNumber = 0) {
+  heroStackSize(handNumber = 0) {
     const seatsData = this.parsedHands[handNumber].filter(
       row => row.startsWith('Seat ') && row.includes(this.heroName())
     )

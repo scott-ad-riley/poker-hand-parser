@@ -40,14 +40,14 @@ describe('standard dollars game', () => {
   })
 
   test('can fetch our own stack size before and after the first hand', () => {
-    expect(parser.heroPotSize()).toEqual({
+    expect(parser.heroStackSize()).toEqual({
       start: 200,
       end: 202
     })
   })
 
   test('can fetch our own stack size before and after a specific hand', () => {
-    expect(parser.heroPotSize(2)).toEqual({
+    expect(parser.heroStackSize(2)).toEqual({
       start: 202,
       end: 204
     })
