@@ -53,6 +53,53 @@ describe('standard dollars game', () => {
     })
   })
 
+  test('can fetch our own stack size for a hand where we do not win the pot', () => {
+    expect(parser.heroStackSize(5)).toEqual({
+      start: 202,
+      end: 196
+    })
+  })
+
+  test('can determine the small blind for the first hand', () => {
+    expect(parser.smallBlind()).toEqual({
+      name: 'Rokep02',
+      value: 1,
+      isHero: false
+    })
+  })
+
+  test('can determine the big blind for the first hand', () => {
+    expect(parser.bigBlind()).toEqual({
+      name: 'rorrrr',
+      value: 2,
+      isHero: true
+    })
+  })
+
+  test('can determine the small blind for a specific hand', () => {
+    expect(parser.smallBlind(3)).toEqual({
+      name: 'rorrrr',
+      value: 1,
+      isHero: true
+    })
+  })
+
+  test('can determine the big blind for a specific hand', () => {
+    expect(parser.bigBlind(3)).toEqual({
+      name: 'Egar7495',
+      value: 2,
+      isHero: false
+    })
+  })
+
+  test('can fetch the heros investment for the first hand', () => {
+    expect(parser.heroInvestment()).toEqual(2)
+  })
+
+  test('can fetch the heros investment for a complex hand', () => {
+    expect(parser.heroInvestment(1)).toEqual(12)
+  })
+
   test('can fetch the hand pot size at the end of a hand', () => {
     expect(parser.potSize(0)).toEqual(2)
   })
