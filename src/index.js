@@ -49,7 +49,7 @@ class Table {
   }
 
   heroStackSize(handNumber = 0) {
-    const [startingSeatRow, endSeatRow] = this.heroSeatRow(handNumber)
+    const [startingSeatRow, endSeatRow] = this.heroSeatRows(handNumber)
     const start = this.potFromRow(startingSeatRow)
     if (this.isTournament() && this.heroOutAt(handNumber)) {
       return {
@@ -57,13 +57,14 @@ class Table {
         end: 0
       }
     }
-    let loss = 0,
-      winnings = 0
-    if (this.heroLostHand(handNumber)) {
-      loss = this.heroInvestment(handNumber)
-    } else {
+    const loss = this.heroInvestment(handNumber)
+
+    let winnings = 0
+    if (!this.heroLostHand(handNumber)) {
       winnings = this.potFromRow(endSeatRow)
     }
+
+    winnings += this.sumUncalledBetsReturned(handNumber)
 
     return {
       start,
@@ -79,10 +80,7 @@ class Table {
     if (bigBlind.isHero) bigBlindAmount = bigBlind.value
     if (smallBlind.isHero) smallBlindAmount = smallBlind.value
 
-    const hole = new Street(this.streetContent(HOLE_LABEL, handNumber))
-    const flop = new Street(this.streetContent(FLOP_LABEL, handNumber))
-    const turn = new Street(this.streetContent(TURN_LABEL, handNumber))
-    const river = new Street(this.streetContent(RIVER_LABEL, handNumber))
+    const { hole, flop, turn, river } = this.buildStreets(handNumber)
 
     return (
       bigBlindAmount +
@@ -167,14 +165,19 @@ class Table {
   }
 
   heroLostHand(handNumber) {
-    /*
-      else find all rows beginning with seat and hero's name
-        determine if they include "collected" or "and won" (create another test for the latter)
-    */
-    const finalSeatRow = this.parsedHands[handNumber].filter(
+    const row = this.finalSeatRow(handNumber)
+    return !row.includes(' collected ') && !row.includes(' and won ')
+  }
+
+  heroSplitHand(handNumber) {
+    const row = this.finalSeatRow(handNumber)
+    return !row.includes(' collected ') && row.includes(' and won ')
+  }
+
+  finalSeatRow(handNumber) {
+    return this.parsedHands[handNumber].filter(
       row => row.includes('Seat ') && row.includes(this.heroName())
     )[1]
-    return !finalSeatRow.includes('collected') // && !finalSeatRow.includes('and won')
   }
 
   heroOutAt(handNumber) {
@@ -183,9 +186,27 @@ class Table {
     )
   }
 
-  heroSeatRow(handNumber) {
+  heroSeatRows(handNumber) {
     return this.parsedHands[handNumber].filter(
       row => row.startsWith('Seat ') && row.includes(this.heroName())
+    )
+  }
+
+  buildStreets(handNumber) {
+    const hole = new Street(this.streetContent(HOLE_LABEL, handNumber))
+    const flop = new Street(this.streetContent(FLOP_LABEL, handNumber))
+    const turn = new Street(this.streetContent(TURN_LABEL, handNumber))
+    const river = new Street(this.streetContent(RIVER_LABEL, handNumber))
+    return { hole, flop, turn, river }
+  }
+
+  sumUncalledBetsReturned(handNumber) {
+    const { hole, flop, turn, river } = this.buildStreets(handNumber)
+    return (
+      hole.uncalledBetReturned(this.heroName()) +
+      flop.uncalledBetReturned(this.heroName()) +
+      turn.uncalledBetReturned(this.heroName()) +
+      river.uncalledBetReturned(this.heroName())
     )
   }
 }

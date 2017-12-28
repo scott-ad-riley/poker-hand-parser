@@ -62,3 +62,28 @@ describe('File Three', () => {
     expect(street.invested('Rokep02')).toEqual(2)
   })
 })
+
+const fileFourContents =
+  "Dealt to rorrrr [Jc 7s]\n\
+Egar7495 joins the table at seat #4 \n\
+victor128422: folds \n\
+Rokep02: folds \n\
+Uncalled bet ($0.01) returned to rorrrr\n\
+rorrrr collected $0.02 from pot\n\
+rorrrr: doesn't show hand"
+
+describe('File Four', () => {
+  beforeEach(() => (street = new Street(fileFourContents)))
+
+  test('parses out the players who folded in a hand', () => {
+    expect(street.folds()).toEqual(['victor128422', 'Rokep02'])
+  })
+
+  test('parses out invested for specific player (rorrrr)', () => {
+    expect(street.invested('rorrrr')).toEqual(0)
+  })
+
+  test('parses out uncalled bet for specific player (rorrrr)', () => {
+    expect(street.uncalledBetReturned('rorrrr')).toEqual(1)
+  })
+})

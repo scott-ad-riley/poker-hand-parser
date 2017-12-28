@@ -35,6 +35,16 @@ class Street {
         : 0
     return betSum + callSum + raiseSum
   }
+
+  uncalledBetReturned(playerName) {
+    const uncalledBetRow = this.rows.find(
+      row => row.startsWith('Uncalled bet') && row.includes(playerName)
+    )
+    if (uncalledBetRow === undefined) return 0
+    return extractMoney(
+      uncalledBetRow.split('Uncalled bet ')[1].split(' returned to')[0]
+    )
+  }
 }
 
 module.exports = Street

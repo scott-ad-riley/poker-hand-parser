@@ -1,8 +1,15 @@
 module.exports = function(field) {
-  const money = field
+  let money = field
     .replace('(', '')
     .replace(')', '')
     .split(' ')[0]
-  if (money[0] === '$') return Number(money.slice(1)) * 100
+  if (money[0] === '$') {
+    money = money.replace('$', '')
+    if (!money.includes('.')) {
+      money += '00'
+    } else {
+      money = money.replace('.', '')
+    }
+  }
   return Number(money)
 }

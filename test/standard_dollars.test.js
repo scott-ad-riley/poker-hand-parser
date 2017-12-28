@@ -42,14 +42,14 @@ describe('standard dollars game', () => {
   test('can fetch our own stack size before and after the first hand', () => {
     expect(table.heroStackSize()).toEqual({
       start: 200,
-      end: 202
+      end: 201
     })
   })
 
   test('can fetch our own stack size before and after a specific hand', () => {
     expect(table.heroStackSize(2)).toEqual({
       start: 202,
-      end: 204
+      end: 203
     })
   })
 
@@ -57,6 +57,13 @@ describe('standard dollars game', () => {
     expect(table.heroStackSize(5)).toEqual({
       start: 202,
       end: 196
+    })
+  })
+
+  test('can fetch our own stack size for a hand where the pot is split', () => {
+    expect(table.heroStackSize(1)).toEqual({
+      start: 201,
+      end: 202
     })
   })
 
