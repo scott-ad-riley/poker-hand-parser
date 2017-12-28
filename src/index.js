@@ -9,7 +9,7 @@ const FLOP_LABEL = '*** FLOP ***'
 const TURN_LABEL = '*** TURN ***'
 const RIVER_LABEL = '*** RIVER ***'
 
-class Parser {
+class Table {
   constructor(fileContents) {
     this.fileContents = fileContents
     const rawDataLines = this.fileContents.split(HAND_SPLIT_PATTERN)
@@ -190,4 +190,4 @@ class Parser {
   }
 }
 
-module.exports = Parser
+module.exports = Table

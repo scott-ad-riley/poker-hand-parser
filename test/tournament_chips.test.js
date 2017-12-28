@@ -1,23 +1,23 @@
-const Parser = require('../')
+const Table = require('../')
 const fs = require('fs')
 const fileContents = fs.readFileSync(
   __dirname + '/fixtures/tournament_chips.txt',
   'utf8'
 )
 
-let parser
+let table
 describe('standard chips game', () => {
-  beforeEach(() => (parser = new Parser(fileContents)))
+  beforeEach(() => (table = new Table(fileContents)))
 
   test('can determine the correct currency for the game', () => {
-    expect(parser.currency()).toBe('chips')
+    expect(table.currency()).toBe('chips')
   })
 
   test('correctly determines if the game is a tournament game', () => {
-    expect(parser.isTournament()).toBe(true)
+    expect(table.isTournament()).toBe(true)
   })
 
   test('correctly determines the pot after a hand', () => {
-    expect(parser.heroStackSize(0)).toEqual({ start: 535, end: 0 })
+    expect(table.heroStackSize(0)).toEqual({ start: 535, end: 0 })
   })
 })
