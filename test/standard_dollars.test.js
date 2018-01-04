@@ -71,7 +71,8 @@ describe('standard dollars game', () => {
     expect(table.smallBlind()).toEqual({
       name: 'Rokep02',
       value: 1,
-      isHero: false
+      isHero: false,
+      seatNumber: 8
     })
   })
 
@@ -79,7 +80,8 @@ describe('standard dollars game', () => {
     expect(table.bigBlind()).toEqual({
       name: 'rorrrr',
       value: 2,
-      isHero: true
+      isHero: true,
+      seatNumber: 2
     })
   })
 
@@ -87,7 +89,8 @@ describe('standard dollars game', () => {
     expect(table.smallBlind(3)).toEqual({
       name: 'rorrrr',
       value: 1,
-      isHero: true
+      isHero: true,
+      seatNumber: 2
     })
   })
 
@@ -95,7 +98,8 @@ describe('standard dollars game', () => {
     expect(table.bigBlind(3)).toEqual({
       name: 'Egar7495',
       value: 2,
-      isHero: false
+      isHero: false,
+      seatNumber: 4
     })
   })
 
