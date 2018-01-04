@@ -72,6 +72,61 @@ class Table {
     }
   }
 
+  handID(handNumber = 0) {
+    return Number(this.parsedHands[handNumber][0].substring(17, 29))
+  }
+
+  tournamentID(handNumber = 0) {
+    if (this.isTournament()) {
+      return Number(this.parsedHands[0][0].substring(43, 53))
+    } else {
+      return null
+    }
+  }
+
+  dateAndTime(handNumber = 0) {
+    const handDetails = this.parsedHands[handNumber][0]
+    var dateStartIndex = this.nthIndex(handDetails, '[', 1)
+    var dateEndIndex = this.nthIndex(handDetails, ']', 1)
+
+    return handDetails.substring(dateStartIndex + 1, dateEndIndex)
+  }
+
+  seatOccupant(handNumber = 0, seatNumber) {
+    if (
+      this.parsedHands[handNumber].find(line =>
+        line.startsWith('Seat ' + seatNumber)
+      ) != null
+    ) {
+      return this.parsedHands[handNumber]
+        .find(line => line.startsWith('Seat ' + seatNumber + ':'))
+        .split(' (')[0]
+        .split(': ')[1]
+    } else {
+      return null
+    }
+  }
+
+  buttonSeat(handNumber = 0) {
+    return Number(
+      this.parsedHands[handNumber]
+        .find(line => line.endsWith('is the button'))
+        .split('#')[1]
+        .charAt(0)
+    )
+  }
+
+  tournamentBuyin(handNumber = 0) {
+    if (this.isTournament()) {
+      const handDetails = this.parsedHands[0][0]
+      var buyinEndIndex = this.nthIndex(handDetails, ' ', 6)
+
+      return handDetails.substring(55, buyinEndIndex)
+    } else {
+      return null
+    }
+  }
+
   heroInvestment(handNumber = 0) {
     let bigBlindAmount = 0
     let smallBlindAmount = 0
@@ -102,15 +157,36 @@ class Table {
 
   // private/internal methods
 
+  nthIndex(string, character, occurence) {
+    var L = string.length,
+      i = -1
+    while (occurence-- && i++ < L) {
+      i = string.indexOf(character, i)
+      if (i < 0) break
+    }
+    return i
+  }
+
+  seatNumberByName(handNumber = 0, name) {
+    return Number(
+      this.parsedHands[handNumber]
+        .find(line => line.includes(name) && line.includes('Seat '))
+        .split(' ')[1]
+        .charAt(0)
+    )
+  }
+
   blindRow(pattern, handNumber) {
     const smallBlindRow = this.parsedHands[handNumber].find(row =>
       row.includes(pattern)
     )
     const name = smallBlindRow.split(`:${pattern}`)[0]
+    const seatNumber = this.seatNumberByName(handNumber, name)
     return {
       name,
       value: extractMoney(smallBlindRow.split(pattern)[1]),
-      isHero: name === this.heroName()
+      isHero: name === this.heroName(),
+      seatNumber: seatNumber
     }
   }
 
