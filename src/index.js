@@ -40,6 +40,10 @@ class Table {
     return this.startingCards(handNumber)
   }
 
+  tableName(handNumber = 0) {
+    return this.parsedHands[handNumber][1].split("'")[1]
+  }
+
   potSize(handNumber = 0) {
     const potData = this.parsedHands[handNumber].find(row =>
       row.startsWith('Total pot ')

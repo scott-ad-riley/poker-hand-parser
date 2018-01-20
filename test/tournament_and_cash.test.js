@@ -85,4 +85,9 @@ describe('standard chips game', () => {
   test('can determine game type of hand', () => {
     expect(table1.gameType(0)).toEqual("Hold'em No Limit")
   })
+
+  test('can determine table name of hand', () => {
+    expect(table1.tableName(0)).toEqual('2154443950 1')
+    expect(table2.tableName(0)).toEqual('Feodosia')
+  })
 })
