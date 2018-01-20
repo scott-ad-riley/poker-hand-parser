@@ -81,4 +81,8 @@ describe('standard chips game', () => {
     expect(table2.bigBlind(0).seatNumber).toEqual(2)
     expect(table2.bigBlind(1).seatNumber).toEqual(3)
   })
+
+  test('can determine game type of hand', () => {
+    expect(table1.gameType(0)).toEqual("Hold'em No Limit")
+  })
 })

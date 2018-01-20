@@ -127,6 +127,14 @@ class Table {
     }
   }
 
+  gameType(handNumber = 0) {
+    if (this.parsedHands[handNumber][0].includes("Hold'em No Limit")) {
+      return "Hold'em No Limit"
+    } else {
+      return 'Other'
+    }
+  }
+
   heroInvestment(handNumber = 0) {
     let bigBlindAmount = 0
     let smallBlindAmount = 0
