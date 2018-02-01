@@ -297,6 +297,20 @@ class Table {
       river.uncalledBetReturned(this.heroName())
     )
   }
+
+  tableDescription(handNumber) {
+    if (this.isTournament()) {
+      return this.parsedHands[0][0]
+        .split(',')[1]
+        .split('-')[0]
+        .trim()
+    } else {
+      return this.parsedHands[0][0]
+        .split(':')[1]
+        .split('-')[0]
+        .trim()
+    }
+  }
 }
 
 module.exports = Table

@@ -10,7 +10,7 @@ describe('standard dollars game', () => {
   beforeEach(() => (table = new Table(fileContents)))
 
   test('can count the number of hands in a file', () => {
-    expect(table.handCount()).toBe(7)
+    expect(table.handCount()).toBe(8)
   })
 
   test('can determine the correct currency for the game', () => {

@@ -90,4 +90,13 @@ describe('standard chips game', () => {
     expect(table1.tableName(0)).toEqual('2154443950 1')
     expect(table2.tableName(0)).toEqual('Feodosia')
   })
+
+  test('can dertermine table description for a hand', () => {
+    expect(table1.tableDescription(0)).toEqual(
+      "$3.32+$0.18 USD Hold'em No Limit"
+    )
+    expect(table2.tableDescription(0)).toEqual(
+      "Hold'em No Limit ($0.01/$0.02 USD)"
+    )
+  })
 })
