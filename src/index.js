@@ -13,9 +13,9 @@ class Table {
   constructor(fileContents) {
     this.fileContents = fileContents
     const rawDataLines = this.fileContents.split(HAND_SPLIT_PATTERN)
-    this.parsedHands = rawDataLines
-      .slice(0, rawDataLines.length - 1)
-      .map(hand => hand.split('\n').map(line => line.trim()))
+    this.parsedHands = rawDataLines.map(hand =>
+      hand.split('\n').map(line => line.trim())
+    )
   }
 
   // public methods
