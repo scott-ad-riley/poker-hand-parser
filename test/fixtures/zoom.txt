@@ -1,0 +1,40 @@
+﻿PokerStars Zoom Hand #181903852428:  Hold'em No Limit ($0.01/$0.02) - 2018/02/02 16:12:21 WET [2018/02/02 11:12:21 ET]
+Table 'Halley' 6-max Seat #1 is the button
+Seat 1: Mazsi269 ($1.74 in chips) 
+Seat 2: YayShovinism ($4.33 in chips) 
+Seat 3: rorrrr ($1.60 in chips) 
+Seat 4: alexsandr 95 ($1.07 in chips) 
+Seat 5: camelot230 ($1.97 in chips) 
+Seat 6: daniboy1123 ($2.09 in chips) 
+YayShovinism: posts small blind $0.01
+rorrrr: posts big blind $0.02
+*** HOLE CARDS ***
+Dealt to rorrrr [6d 3h]
+alexsandr 95: calls $0.02
+camelot230: folds 
+daniboy1123: calls $0.02
+Mazsi269: folds 
+YayShovinism: folds 
+rorrrr: checks 
+*** FLOP *** [3s 3c Ts]
+rorrrr: bets $0.07
+alexsandr 95: folds 
+daniboy1123: calls $0.07
+*** TURN *** [3s 3c Ts] [Jh]
+rorrrr: bets $0.20
+daniboy1123: folds 
+Uncalled bet ($0.20) returned to rorrrr
+rorrrr collected $0.20 from pot
+rorrrr: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.21 | Rake $0.01 
+Board [3s 3c Ts Jh]
+Seat 1: Mazsi269 (button) folded before Flop (didn't bet)
+Seat 2: YayShovinism (small blind) folded before Flop
+Seat 3: rorrrr (big blind) collected ($0.20)
+Seat 4: alexsandr 95 folded on the Flop
+Seat 5: camelot230 folded before Flop (didn't bet)
+Seat 6: daniboy1123 folded on the Turn
+
+
+

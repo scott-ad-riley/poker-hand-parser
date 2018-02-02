@@ -8,27 +8,33 @@ const cashExample = fs.readFileSync(
   __dirname + '/fixtures/standard_dollars.txt',
   'utf8'
 )
+const zoomExample = fs.readFileSync(__dirname + '/fixtures/zoom.txt', 'utf8')
 
 let table
 describe('standard chips game', () => {
   beforeEach(() => (table1 = new Table(tournyExample)))
   beforeEach(() => (table2 = new Table(cashExample)))
+  beforeEach(() => (table3 = new Table(zoomExample)))
 
   test('can determine the correct currency for the game', () => {
     expect(table1.currency()).toBe('chips')
+    expect(table3.currency()).toBe('$')
   })
 
   test('correctly determines if the game is a tournament game', () => {
     expect(table1.isTournament()).toBe(true)
+    expect(table3.isTournament()).toBe(false)
   })
 
   test('correctly determines the heros stacksize after a hand', () => {
     expect(table1.heroStackSize(0)).toEqual({ start: 535, end: 0 })
+    expect(table3.heroStackSize(0)).toEqual({ start: 160, end: 171 })
   })
 
   test('can determine tournament id if table is tournament', () => {
     expect(table1.tournamentID(0)).toEqual(2154443950)
     expect(table2.tournamentID(0)).toEqual(null)
+    expect(table3.tournamentID(0)).toEqual(null)
   })
 
   test('can determine tournament buyin if table is tournament', () => {
@@ -41,6 +47,7 @@ describe('standard chips game', () => {
     expect(table1.handID(0)).toEqual(179581295772)
     expect(table2.handID(0)).toEqual(179821215821)
     expect(table2.handID(1)).toEqual(179821224679)
+    expect(table3.handID(0)).toEqual(181903852428)
   })
 
   test('can fetch the pot size for cash or tourny hand', () => {
@@ -91,12 +98,19 @@ describe('standard chips game', () => {
     expect(table2.tableName(0)).toEqual('Feodosia')
   })
 
-  test('can dertermine table description for a hand', () => {
-    expect(table1.tableDescription(0)).toEqual(
-      "$3.32+$0.18 USD Hold'em No Limit"
-    )
+  test('can determine table description for a hand', () => {
+    expect(table1.tableDescription(0)).toEqual("$3.50 USD Hold'em No Limit")
     expect(table2.tableDescription(0)).toEqual(
       "Hold'em No Limit ($0.01/$0.02 USD)"
     )
+    expect(table3.tableDescription(0)).toEqual(
+      "Zoom - Hold'em No Limit ($0.01/$0.02)"
+    )
+  })
+
+  test('can determine table description for a hand', () => {
+    expect(table1.tableSize(0)).toEqual('Heads Up')
+    expect(table2.tableSize(0)).toEqual('9-max')
+    expect(table3.tableSize(0)).toEqual('6-max')
   })
 })

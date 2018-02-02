@@ -1,5 +1,6 @@
 const cardsFromSet = require('./cards_from_set')
 const extractMoney = require('./money_inside_brackets')
+const tallyBuyin = require('./tally_buyin')
 const Street = require('./street')
 
 const HAND_SPLIT_PATTERN = '\n\n\n\n'
@@ -30,6 +31,10 @@ class Table {
 
   isTournament() {
     return this.parsedHands[0][0].includes('Tournament')
+  }
+
+  isZoom() {
+    return this.parsedHands[0][0].includes('Zoom')
   }
 
   heroName() {
@@ -77,12 +82,12 @@ class Table {
   }
 
   handID(handNumber = 0) {
-    return Number(this.parsedHands[handNumber][0].substring(17, 29))
+    return Number(this.parsedHands[handNumber][0].split('#')[1].split(':')[0])
   }
 
   tournamentID(handNumber = 0) {
     if (this.isTournament()) {
-      return Number(this.parsedHands[0][0].substring(43, 53))
+      return Number(this.parsedHands[0][0].split('#')[2].split(',')[0])
     } else {
       return null
     }
@@ -122,10 +127,7 @@ class Table {
 
   tournamentBuyin(handNumber = 0) {
     if (this.isTournament()) {
-      const handDetails = this.parsedHands[0][0]
-      var buyinEndIndex = this.nthIndex(handDetails, ' ', 6)
-
-      return handDetails.substring(55, buyinEndIndex)
+      return this.parsedHands[0][0].split(',')[1].split(' ')[1]
     } else {
       return null
     }
@@ -300,15 +302,53 @@ class Table {
 
   tableDescription(handNumber) {
     if (this.isTournament()) {
-      return this.parsedHands[0][0]
-        .split(',')[1]
-        .split('-')[0]
-        .trim()
+      const tournyDesc = tallyBuyin(
+        this.parsedHands[0][0]
+          .split(',')[1]
+          .split('-')[0]
+          .trim()
+      )
+
+      if (this.isZoom()) {
+        return 'Zoom - ' + tournyDesc
+      } else {
+        return tournyDesc
+      }
     } else {
-      return this.parsedHands[0][0]
+      const cashDesc = this.parsedHands[0][0]
         .split(':')[1]
         .split('-')[0]
         .trim()
+
+      if (this.isZoom()) {
+        return 'Zoom - ' + cashDesc
+      } else {
+        return cashDesc
+      }
+    }
+  }
+
+  tableSize(handNumber = 0) {
+    const tableSizeString = this.parsedHands[handNumber]
+      .find(line => line.endsWith('is the button'))
+      .split('-max')[0]
+
+    if (tableSizeString.substr(tableSizeString.length - 1) == 2) {
+      return 'Heads Up'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 3) {
+      return '3-max'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 4) {
+      return '4-max'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 5) {
+      return '5-max'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 6) {
+      return '6-max'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 7) {
+      return '7-max'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 8) {
+      return '8-max'
+    } else if (tableSizeString.substr(tableSizeString.length - 1) == 9) {
+      return '9-max'
     }
   }
 }
