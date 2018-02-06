@@ -12,7 +12,7 @@ const RIVER_LABEL = '*** RIVER ***'
 
 class Table {
   constructor(fileContents) {
-    this.fileContents = fileContents
+    this.fileContents = fileContents.replace(/\r/g, '')
     const rawDataLines = this.fileContents.split(HAND_SPLIT_PATTERN)
     this.parsedHands = rawDataLines.map(hand =>
       hand.split('\n').map(line => line.trim())

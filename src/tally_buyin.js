@@ -9,7 +9,6 @@ module.exports = function(untalliedDescription) {
   buyinLessArray.shift()
   var buyinLessString = buyinLessArray.join(' ')
 
-  console.log(buyinLessString)
 
   return currency + talliedBuyin + ' ' + buyinLessString
 }
