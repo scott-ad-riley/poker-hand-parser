@@ -46,7 +46,11 @@ class Table {
   }
 
   tableName(handNumber = 0) {
-    return this.parsedHands[handNumber][1].split("'")[1]
+    if (this.isTournament()) {
+      return this.parsedHands[handNumber][1].split("'")[1].split(' ')[0]
+    } else {
+      return this.parsedHands[handNumber][1].split("'")[1]
+    }
   }
 
   potSize(handNumber = 0) {
