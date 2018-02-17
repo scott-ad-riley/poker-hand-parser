@@ -197,7 +197,11 @@ class Table {
         seatNumber: seatNumber
       }
     } else {
-      return null
+      return {
+        name,
+        isHero: name === this.heroName(),
+        seatNumber: 0
+      }
     }
   }
 

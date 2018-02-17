@@ -115,7 +115,7 @@ describe('standard chips game', () => {
     expect(table2.smallBlind(1).seatNumber).toEqual(2)
     expect(table4.smallBlind(0).seatNumber).toEqual(1)
     expect(table5.smallBlind(0).seatNumber).toEqual(4)
-    expect(table6.smallBlind(0)).toEqual(null)
+    expect(table6.bigBlind(0).seatNumber).toEqual(0)
   })
 
   test('can determine seat number of big blind', () => {
@@ -124,7 +124,7 @@ describe('standard chips game', () => {
     expect(table2.bigBlind(1).seatNumber).toEqual(3)
     expect(table4.bigBlind(0).seatNumber).toEqual(4)
     expect(table5.bigBlind(0).seatNumber).toEqual(5)
-    expect(table6.bigBlind(0)).toEqual(null)
+    expect(table6.bigBlind(0).seatNumber).toEqual(0)
   })
 
   test('can determine game type of hand', () => {
