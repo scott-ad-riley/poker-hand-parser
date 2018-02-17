@@ -198,8 +198,8 @@ class Table {
       }
     } else {
       return {
-        name,
-        isHero: name === this.heroName(),
+        name: null,
+        isHero: null,
         seatNumber: 0
       }
     }

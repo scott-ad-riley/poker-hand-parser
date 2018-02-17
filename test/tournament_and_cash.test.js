@@ -116,6 +116,7 @@ describe('standard chips game', () => {
     expect(table4.smallBlind(0).seatNumber).toEqual(1)
     expect(table5.smallBlind(0).seatNumber).toEqual(4)
     expect(table6.bigBlind(0).seatNumber).toEqual(0)
+    expect(table6.bigBlind(0).name).toEqual(null)
   })
 
   test('can determine seat number of big blind', () => {
