@@ -1,0 +1,25 @@
+PokerStars Hand #182619506208: Tournament #2222072970, $0.91+$0.09 USD Hold'em No Limit - Level VII (100/200) - 2018/02/17 3:38:36 WET [2018/02/16 22:38:36 ET]
+Table '2222072970 1' 5-max Seat #1 is the button
+Seat 1: rorrrr (1616 in chips) 
+Seat 4: pearce17 (884 in chips) 
+rorrrr: posts the ante 1616 and is all-in
+pearce17: posts the ante 884 and is all-in
+*** HOLE CARDS ***
+Dealt to rorrrr [Qc Kc]
+Uncalled bet (732) returned to rorrrr
+*** FLOP *** [4c Ks 4d]
+*** TURN *** [4c Ks 4d] [6d]
+*** RIVER *** [4c Ks 4d 6d] [9c]
+*** SHOW DOWN ***
+pearce17: shows [3d Js] (a pair of Fours)
+rorrrr: shows [Qc Kc] (two pair, Kings and Fours)
+rorrrr collected 1768 from pot
+pearce17 finished the tournament in 2nd place
+*** SUMMARY ***
+Total pot 1768 | Rake 0 
+Board [4c Ks 4d 6d 9c]
+Seat 1: rorrrr (button) (small blind) showed [Qc Kc] and won (1768) with two pair, Kings and Fours
+Seat 4: pearce17 (big blind) showed [3d Js] and lost with a pair of Fours
+
+
+

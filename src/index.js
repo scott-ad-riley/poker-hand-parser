@@ -64,24 +64,8 @@ class Table {
   heroStackSize(handNumber = 0) {
     const [startingSeatRow, endSeatRow] = this.heroSeatRows(handNumber)
     const start = this.potFromRow(startingSeatRow)
-    if (this.isTournament() && this.heroOutAt(handNumber)) {
-      return {
-        start,
-        end: 0
-      }
-    }
-    const loss = this.heroInvestment(handNumber)
-
-    let winnings = 0
-    if (!this.heroLostHand(handNumber)) {
-      winnings = this.potFromRow(endSeatRow)
-    }
-
-    winnings += this.sumUncalledBetsReturned(handNumber)
-
     return {
-      start,
-      end: start - loss + winnings
+      start
     }
   }
 
@@ -121,12 +105,14 @@ class Table {
   }
 
   buttonSeat(handNumber = 0) {
-    return Number(
-      this.parsedHands[handNumber]
-        .find(line => line.endsWith('is the button'))
-        .split('#')[1]
-        .charAt(0)
+    const buttonLine = this.parsedHands[handNumber].find(line =>
+      line.endsWith('is the button')
     )
+    if (buttonLine != null) {
+      return Number(buttonLine.split('#')[1].charAt(0))
+    } else {
+      return 0
+    }
   }
 
   tournamentBuyin(handNumber = 0) {
@@ -166,11 +152,11 @@ class Table {
   }
 
   bigBlind(handNumber = 0) {
-    return this.blindRow(' posts big blind ', handNumber)
+    return this.blindRow(' (big blind) ', handNumber)
   }
 
   smallBlind(handNumber = 0) {
-    return this.blindRow(' posts small blind ', handNumber)
+    return this.blindRow(' (small blind) ', handNumber)
   }
 
   // private/internal methods
@@ -198,13 +184,20 @@ class Table {
     const smallBlindRow = this.parsedHands[handNumber].find(row =>
       row.includes(pattern)
     )
-    const name = smallBlindRow.split(`:${pattern}`)[0]
-    const seatNumber = this.seatNumberByName(handNumber, name)
-    return {
-      name,
-      value: extractMoney(smallBlindRow.split(pattern)[1]),
-      isHero: name === this.heroName(),
-      seatNumber: seatNumber
+
+    if (smallBlindRow != null) {
+      const name = smallBlindRow
+        .split(`${pattern}`)[0]
+        .split(':')[1]
+        .trim()
+      const seatNumber = this.seatNumberByName(handNumber, name)
+      return {
+        name,
+        isHero: name === this.heroName(),
+        seatNumber: seatNumber
+      }
+    } else {
+      return null
     }
   }
 
@@ -313,6 +306,15 @@ class Table {
           .trim()
       )
 
+      if (tournyDesc == '8') {
+        const EightDesc = '8-Game'
+        if (this.isZoom()) {
+          return 'Zoom - ' + EightDesc
+        } else {
+          return EightDesc
+        }
+      }
+
       if (this.isZoom()) {
         return 'Zoom - ' + tournyDesc
       } else {
@@ -324,6 +326,15 @@ class Table {
         .split('-')[0]
         .trim()
 
+      if (cashDesc == '8') {
+        const EightDesc = '8-Game'
+        if (this.isZoom()) {
+          return 'Zoom - ' + EightDesc
+        } else {
+          return EightDesc
+        }
+      }
+
       if (this.isZoom()) {
         return 'Zoom - ' + cashDesc
       } else {
@@ -333,9 +344,7 @@ class Table {
   }
 
   tableSize(handNumber = 0) {
-    const tableSizeString = this.parsedHands[handNumber]
-      .find(line => line.endsWith('is the button'))
-      .split('-max')[0]
+    const tableSizeString = this.parsedHands[handNumber][1].split('-max')[0]
 
     if (tableSizeString.substr(tableSizeString.length - 1) == 2) {
       return 'Heads Up'

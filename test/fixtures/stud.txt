@@ -1,0 +1,43 @@
+PokerStars Hand #182639671213:  7 Card Stud Limit ($0.10/$0.20 USD) - 2018/02/17 16:08:46 WET [2018/02/17 11:08:46 ET]
+Table 'Amalia II' 8-max
+Seat 1: rorrrr ($4 in chips) 
+Seat 3: drachensüss ($2 in chips) 
+rorrrr: posts the ante $0.02
+drachensüss: posts the ante $0.02
+*** 3rd STREET ***
+Dealt to rorrrr [Kh Ah Js]
+Dealt to drachensüss [6s]
+drachensüss: brings in for $0.04
+rorrrr: raises $0.06 to $0.10
+drachensüss: calls $0.06
+*** 4th STREET ***
+Dealt to rorrrr [Kh Ah Js] [5c]
+Dealt to drachensüss [6s] [Qh]
+drachensüss: checks 
+rorrrr: bets $0.10
+drachensüss: calls $0.10
+*** 5th STREET ***
+Dealt to rorrrr [Kh Ah Js 5c] [3s]
+Dealt to drachensüss [6s Qh] [Kc]
+drachensüss: checks 
+rorrrr: checks 
+*** 6th STREET ***
+Dealt to rorrrr [Kh Ah Js 5c 3s] [5h]
+Dealt to drachensüss [6s Qh Kc] [4h]
+rorrrr: bets $0.20
+drachensüss: calls $0.20
+*** RIVER ***
+Dealt to rorrrr [Kh Ah Js 5c 3s 5h] [8d]
+rorrrr: checks 
+drachensüss: checks 
+*** SHOW DOWN ***
+rorrrr: shows [Kh Ah Js 5c 3s 5h 8d] (a pair of Fives)
+drachensüss: mucks hand 
+rorrrr collected $0.80 from pot
+*** SUMMARY ***
+Total pot $0.84 | Rake $0.04 
+Seat 1: rorrrr showed [Kh Ah Js 5c 3s 5h 8d] and won ($0.80) with a pair of Fives
+Seat 3: drachensüss mucked [8h 7h 6s Qh Kc 4h Ad]
+
+
+

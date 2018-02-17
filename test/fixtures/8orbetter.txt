@@ -1,0 +1,39 @@
+PokerStars Hand #182620352759:  Omaha Hi/Lo Pot Limit ($0.05/$0.10 USD) - 2018/02/17 4:19:24 WET [2018/02/16 23:19:24 ET]
+Table 'Prothoon III' 9-max Seat #6 is the button
+Seat 4: hammerfish75 ($3.22 in chips) 
+Seat 5: tity052 ($34.78 in chips) 
+Seat 6: IVAN280863 ($5.11 in chips) 
+Seat 7: rorrrr ($5.33 in chips) 
+rorrrr: posts small blind $0.05
+hammerfish75: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to rorrrr [Kh 6c Kd 7h]
+tity052: folds 
+IVAN280863: folds 
+rorrrr: calls $0.05
+hammerfish75: checks 
+*** FLOP *** [Qs 8s Ks]
+rorrrr: checks 
+hammerfish75: checks 
+*** TURN *** [Qs 8s Ks] [Th]
+rorrrr: checks 
+hammerfish75: checks 
+*** RIVER *** [Qs 8s Ks Th] [Qd]
+rorrrr: bets $0.10
+hammerfish75: raises $0.10 to $0.20
+rorrrr: raises $0.59 to $0.79
+hammerfish75: calls $0.59
+*** SHOW DOWN ***
+rorrrr: shows [Kh 6c Kd 7h] (HI: a full house, Kings full of Queens)
+hammerfish75: mucks hand 
+rorrrr collected $1.70 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot $1.78 | Rake $0.08 
+Board [Qs 8s Ks Th Qd]
+Seat 4: hammerfish75 (big blind) mucked [Tc 2h Qc 5d]
+Seat 5: tity052 folded before Flop (didn't bet)
+Seat 6: IVAN280863 (button) folded before Flop (didn't bet)
+Seat 7: rorrrr (small blind) showed [Kh 6c Kd 7h] and won ($1.70) with HI: a full house, Kings full of Queens
+
+

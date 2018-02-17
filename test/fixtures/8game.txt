@@ -1,0 +1,29 @@
+PokerStars Hand #182620493567:  8-Game (Triple Draw 2-7 Lowball Limit, $0.20/$0.40 USD) - 2018/02/17 4:26:25 WET [2018/02/16 23:26:25 ET]
+Table 'Zerlina' 6-max Seat #3 is the button
+Seat 1: edumagalhaes ($8.80 in chips) 
+Seat 3: stylev ($11.61 in chips) 
+Seat 4: quvaca ($9.71 in chips) 
+Seat 5: rorrrr ($4 in chips) 
+Seat 6: kr1stus ($15.81 in chips) 
+quvaca: posts small blind $0.10
+rorrrr: posts big blind $0.20
+*** DEALING HANDS ***
+Dealt to rorrrr [Kd 9d 8c Kh Qs]
+kr1stus: raises $0.20 to $0.40
+edumagalhaes: folds 
+stylev: folds 
+quvaca: folds 
+rorrrr: folds 
+Uncalled bet ($0.20) returned to kr1stus
+kr1stus collected $0.50 from pot
+kr1stus: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.50 | Rake $0 
+Seat 1: edumagalhaes folded before the Draw (didn't bet)
+Seat 3: stylev (button) folded before the Draw (didn't bet)
+Seat 4: quvaca (small blind) folded before the Draw
+Seat 5: rorrrr (big blind) folded before the Draw
+Seat 6: kr1stus collected ($0.50)
+
+
+
