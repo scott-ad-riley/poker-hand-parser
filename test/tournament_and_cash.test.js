@@ -18,6 +18,11 @@ const EightGameExample = fs.readFileSync(
   'utf8'
 )
 
+const EasternTime = fs.readFileSync(
+  __dirname + '/fixtures/ETtimezone.txt',
+  'utf8'
+)
+
 const StudExample = fs.readFileSync(__dirname + '/fixtures/stud.txt', 'utf8')
 
 let table
@@ -28,6 +33,7 @@ describe('standard chips game', () => {
   beforeEach(() => (table4 = new Table(shootoutExample)))
   beforeEach(() => (table5 = new Table(EightGameExample)))
   beforeEach(() => (table6 = new Table(StudExample)))
+  beforeEach(() => (table7 = new Table(EasternTime)))
 
   test('can determine the correct currency for the game', () => {
     expect(table1.currency()).toBe('chips')
@@ -35,6 +41,7 @@ describe('standard chips game', () => {
     expect(table4.currency()).toBe('chips')
     expect(table5.currency()).toBe('$')
     expect(table6.currency()).toBe('$')
+    expect(table7.currency()).toBe('$')
   })
 
   test('correctly determines if the game is a tournament game', () => {
@@ -43,6 +50,7 @@ describe('standard chips game', () => {
     expect(table4.isTournament()).toBe(true)
     expect(table5.isTournament()).toBe(false)
     expect(table6.isTournament()).toBe(false)
+    expect(table7.isTournament()).toBe(false)
   })
 
   test('correctly determines the heros stacksize after a hand', () => {
@@ -50,6 +58,7 @@ describe('standard chips game', () => {
     expect(table3.heroStackSize(0)).toEqual({ start: 160 })
     expect(table5.heroStackSize(0)).toEqual({ start: 400 })
     expect(table6.heroStackSize(0)).toEqual({ start: 400 })
+    expect(table7.heroStackSize(0)).toEqual({ start: 1600 })
   })
 
   test('can determine tournament id if table is tournament', () => {
@@ -57,6 +66,7 @@ describe('standard chips game', () => {
     expect(table2.tournamentID(0)).toEqual(null)
     expect(table3.tournamentID(0)).toEqual(null)
     expect(table5.tournamentID(0)).toEqual(null)
+    expect(table7.tournamentID(0)).toEqual(null)
   })
 
   test('can determine tournament buyin if table is tournament', () => {
@@ -73,6 +83,7 @@ describe('standard chips game', () => {
     expect(table4.handID(0)).toEqual(182619506208)
     expect(table5.handID(0)).toEqual(182620493567)
     expect(table6.handID(0)).toEqual(182639671213)
+    expect(table7.handID(0)).toEqual(185644075818)
   })
 
   test('can fetch the pot size for cash or tourny hand', () => {
@@ -82,12 +93,14 @@ describe('standard chips game', () => {
     expect(table4.potSize(0)).toEqual(1768)
     expect(table5.potSize(0)).toEqual(50)
     expect(table6.potSize(0)).toEqual(84)
+    expect(table7.potSize(0)).toEqual(40)
   })
 
   test('can determine date and time of tourny or cash hand', () => {
     expect(table1.dateAndTime(0)).toEqual('2017/12/15 11:22:27 ET')
     expect(table2.dateAndTime(0)).toEqual('2017/12/20 16:41:08 ET')
     expect(table2.dateAndTime(1)).toEqual('2017/12/20 16:41:20 ET')
+    expect(table7.dateAndTime(0)).toEqual('2018/04/24 22:43:10 ET')
   })
 
   test('can determine if seat is occupied who is in it', () => {
@@ -98,6 +111,7 @@ describe('standard chips game', () => {
     expect(table2.seatOccupant(1, 2)).toEqual('rorrrr')
     expect(table2.seatOccupant(2, 8)).toEqual('Rokep02')
     expect(table6.seatOccupant(0, 1)).toEqual('rorrrr')
+    expect(table7.seatOccupant(0, 1)).toEqual('Pitexx')
   })
 
   test('can determine seat number of button', () => {
@@ -133,6 +147,7 @@ describe('standard chips game', () => {
     expect(table4.gameType(0)).toEqual("Hold'em No Limit")
     expect(table5.gameType(0)).toEqual('Other')
     expect(table6.gameType(0)).toEqual('Other')
+    expect(table7.gameType(0)).toEqual("Hold'em No Limit")
   })
 
   test('can determine table name of hand', () => {

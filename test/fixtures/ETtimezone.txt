@@ -1,0 +1,38 @@
+PokerStars Zoom Hand #185644075818:  Hold'em No Limit ($0.08/$0.16) - 2018/04/24 22:43:10 ET
+Table 'Amundsen' 6-max Seat #1 is the button
+Seat 1: Pitexx ($27.82 in chips) 
+Seat 2: gray_ink_crew ($18.45 in chips) 
+Seat 3: rorrrr ($16 in chips) 
+Seat 4: leopoker1 ($16 in chips) 
+Seat 5: bomap11 ($7.71 in chips) 
+Seat 6: TerranGosu ($16.98 in chips) 
+gray_ink_crew: posts small blind $0.08
+rorrrr: posts big blind $0.16
+*** HOLE CARDS ***
+Dealt to rorrrr [Qh 9h]
+leopoker1 has timed out while disconnected
+leopoker1: folds 
+bomap11: calls $0.16
+TerranGosu: folds 
+Pitexx: folds 
+gray_ink_crew: folds 
+rorrrr: checks 
+*** FLOP *** [7d Ad Td]
+rorrrr: checks 
+bomap11: bets $0.38
+rorrrr: folds 
+Uncalled bet ($0.38) returned to bomap11
+bomap11 collected $0.38 from pot
+bomap11: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.40 | Rake $0.02 
+Board [7d Ad Td]
+Seat 1: Pitexx (button) folded before Flop (didn't bet)
+Seat 2: gray_ink_crew (small blind) folded before Flop
+Seat 3: rorrrr (big blind) folded on the Flop
+Seat 4: leopoker1 folded before Flop (didn't bet)
+Seat 5: bomap11 collected ($0.38)
+Seat 6: TerranGosu folded before Flop (didn't bet)
+
+
+

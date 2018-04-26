@@ -82,11 +82,15 @@ class Table {
   }
 
   dateAndTime(handNumber = 0) {
-    const handDetails = this.parsedHands[handNumber][0]
-    var dateStartIndex = this.nthIndex(handDetails, '[', 1)
-    var dateEndIndex = this.nthIndex(handDetails, ']', 1)
-
-    return handDetails.substring(dateStartIndex + 1, dateEndIndex)
+    if (this.parsedHands[handNumber][0].includes('[')) {
+      const handDetails = this.parsedHands[handNumber][0]
+      var dateStartIndex = this.nthIndex(handDetails, '[', 1)
+      var dateEndIndex = this.nthIndex(handDetails, ']', 1)
+      return handDetails.substring(dateStartIndex + 1, dateEndIndex)
+    } else {
+      const handDetails = this.parsedHands[handNumber][0]
+      return handDetails.split('- ')[1]
+    }
   }
 
   seatOccupant(handNumber = 0, seatNumber) {
