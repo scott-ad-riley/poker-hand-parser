@@ -89,7 +89,7 @@ class Table {
       return handDetails.substring(dateStartIndex + 1, dateEndIndex)
     } else {
       const handDetails = this.parsedHands[handNumber][0]
-      return handDetails.split('- ')[1]
+      return handDetails.split('- ')[handDetails.split('- ').length - 1]
     }
   }
 

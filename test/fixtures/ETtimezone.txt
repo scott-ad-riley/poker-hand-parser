@@ -36,3 +36,47 @@ Seat 6: TerranGosu folded before Flop (didn't bet)
 
 
 
+PokerStars Hand #189349525731: Tournament #2367624010, $25+$25+$5 USD Hold''em No Limit - Level XXXI (2000/4000) - 2018/07/30 22:02:09 ET
+Table ''2367624010 46'' 9-max Seat #7 is the button
+Seat 1: pocavoya (160851 in chips, $112.50 bounty) 
+Seat 2: JeffGross (153142 in chips, $87.10 bounty) 
+Seat 4: gerasimo80 (9914 in chips, $235.91 bounty) 
+Seat 5: RenanToniolo (124137 in chips, $318.74 bounty) 
+Seat 6: Duim (31826 in chips, $114.05 bounty) 
+Seat 7: YogghhhAmina (55297 in chips, $211.31 bounty) 
+Seat 8: dtsironis7 (140472 in chips, $123.04 bounty) 
+Seat 9: lisandroc (74686 in chips, $100.77 bounty) 
+pocavoya: posts the ante 600
+JeffGross: posts the ante 600
+gerasimo80: posts the ante 600
+RenanToniolo: posts the ante 600
+Duim: posts the ante 600
+YogghhhAmina: posts the ante 600
+dtsironis7: posts the ante 600
+lisandroc: posts the ante 600
+dtsironis7: posts small blind 2000
+lisandroc: posts big blind 4000
+*** HOLE CARDS ***
+Dealt to JeffGross [8d 5s]
+pocavoya: raises 4840 to 8840
+JeffGross: folds 
+gerasimo80: folds 
+RenanToniolo: folds 
+Duim: folds 
+YogghhhAmina: folds 
+dtsironis7: folds 
+lisandroc: folds 
+Uncalled bet (4840) returned to pocavoya
+pocavoya collected 14800 from pot
+pocavoya: doesn''t show hand 
+*** SUMMARY ***
+Total pot 14800 | Rake 0 
+Seat 1: pocavoya collected (14800)
+Seat 2: JeffGross folded before Flop (didn''t bet)
+Seat 4: gerasimo80 folded before Flop (didn''t bet)
+Seat 5: RenanToniolo folded before Flop (didn''t bet)
+Seat 6: Duim folded before Flop (didn''t bet)
+Seat 7: YogghhhAmina (button) folded before Flop (didn''t bet)
+Seat 8: dtsironis7 (small blind) folded before Flop
+Seat 9: lisandroc (big blind) folded before Flop
+

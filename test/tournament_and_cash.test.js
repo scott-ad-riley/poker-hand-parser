@@ -101,6 +101,7 @@ describe('standard chips game', () => {
     expect(table2.dateAndTime(0)).toEqual('2017/12/20 16:41:08 ET')
     expect(table2.dateAndTime(1)).toEqual('2017/12/20 16:41:20 ET')
     expect(table7.dateAndTime(0)).toEqual('2018/04/24 22:43:10 ET')
+    expect(table7.dateAndTime(1)).toEqual('2018/07/30 22:02:09 ET')
   })
 
   test('can determine if seat is occupied who is in it', () => {
