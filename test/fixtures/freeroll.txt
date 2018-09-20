@@ -1,0 +1,41 @@
+PokerStars Hand #186735921232: Tournament #2292903993, Freeroll Hold'em No Limit - Level I (20/40) - 2018/05/22 19:07:33 CET [2018/05/22 13:07:33 ET]
+Table '2292903993 277' 9-max Seat #3 is the button
+Seat 1: LerKass (1500 in chips) 
+Seat 2: LuisM0420 (1480 in chips) is sitting out
+Seat 3: A.Wickerman (1440 in chips) is sitting out
+Seat 4: Lucio_Marz (1440 in chips) 
+Seat 5: FOXDOG69 (1460 in chips) 
+Seat 6: Metr@lh@s (1460 in chips) 
+Seat 7: tjvomauricio (1500 in chips) 
+Seat 8: sergoder (3220 in chips) 
+Seat 9: lajara20 (1500 in chips) is sitting out
+Lucio_Marz: posts small blind 20
+FOXDOG69: posts big blind 40
+*** HOLE CARDS ***
+Dealt to tjvomauricio [Jd Ad]
+Metr@lh@s: folds 
+tjvomauricio: raises 80 to 120
+sergoder: calls 120
+lajara20: folds 
+LerKass: calls 120
+LuisM0420: folds 
+A.Wickerman: folds 
+Lucio_Marz: folds 
+FOXDOG69: folds 
+*** FLOP *** [Ac Th 7d]
+tjvomauricio: bets 300
+sergoder: calls 300
+LerKass: calls 300
+*** TURN *** [Ac Th 7d] [Jh]
+tjvomauricio: bets 1080 and is all-in
+sergoder: calls 1080
+LerKass: folds 
+*** RIVER *** [Ac Th 7d Jh] [Kh]
+*** SUMMARY ***
+Total pot 3480 | Rake 0 
+Board [Ac Th 7d Jh Kh]4
+Seat 7: tjvomauricio showed [Jd Ad] and lost with two pair, Aces and Jacks
+Seat 8: sergoder showed [7h 7c] and won (3480) with three of a kind, Sevens
+
+
+

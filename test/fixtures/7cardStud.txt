@@ -1,0 +1,70 @@
+PokerStars Hand #190732610667: Tournament #2378947325, $200+$15 USD HORSE (7 Card Stud Limit) - Level XIV (1000/2000) - 2018/09/06 9:26:09 PT [2018/09/06 12:26:09 ET]
+Table '2378947325 7' 8-max
+Seat 1: 5135 (37175 in chips) 
+Seat 2: L. Veldhuis (54200 in chips) 
+Seat 3: RozaMadder (87980 in chips) 
+Seat 4: kokaboka777 (48760 in chips) 
+Seat 5: MOHAPX85 (67245 in chips) 
+Seat 6: dolmren (35020 in chips) 
+Seat 7: DallasCorben (51300 in chips) 
+Seat 8: Y.Strah0vski (46650 in chips) 
+5135: posts the ante 200
+L. Veldhuis: posts the ante 200
+RozaMadder: posts the ante 200
+kokaboka777: posts the ante 200
+MOHAPX85: posts the ante 200
+dolmren: posts the ante 200
+DallasCorben: posts the ante 200
+Y.Strah0vski: posts the ante 200
+*** 3rd STREET ***
+Dealt to 5135 [Qd]
+Dealt to L. Veldhuis [6s 3h 4h]
+Dealt to RozaMadder [7s]
+Dealt to kokaboka777 [3d]
+Dealt to MOHAPX85 [Kd]
+Dealt to dolmren [3c]
+Dealt to DallasCorben [Ks]
+Dealt to Y.Strah0vski [8c]
+dolmren: brings in for 300
+DallasCorben: calls 300
+Y.Strah0vski: folds 
+5135: folds 
+L. Veldhuis: folds 
+RozaMadder: folds 
+kokaboka777: folds 
+MOHAPX85: folds 
+*** 4th STREET ***
+Dealt to dolmren [3c] [2c]
+Dealt to DallasCorben [Ks] [4s]
+DallasCorben: bets 1000
+dolmren: calls 1000
+*** 5th STREET ***
+Dealt to dolmren [3c 2c] [2h]
+Dealt to DallasCorben [Ks 4s] [9s]
+dolmren: bets 2000
+DallasCorben: calls 2000
+*** 6th STREET ***
+Dealt to dolmren [3c 2c 2h] [Jc]
+Dealt to DallasCorben [Ks 4s 9s] [Kc]
+DallasCorben: bets 2000
+dolmren: calls 2000
+*** RIVER ***
+DallasCorben: bets 2000
+dolmren: calls 2000
+*** SHOW DOWN ***
+DallasCorben: shows [7h 7d Ks 4s 9s Kc Tc] (two pair, Kings and Sevens)
+dolmren: shows [Qs 2s 3c 2c 2h Jc 7c] (three of a kind, Deuces)
+dolmren collected 16200 from pot
+*** SUMMARY ***
+Total pot 16200 | Rake 0 
+Seat 1: 5135 folded on the 3rd Street (didn't bet)
+Seat 2: L. Veldhuis folded on the 3rd Street (didn't bet)
+Seat 3: RozaMadder folded on the 3rd Street (didn't bet)
+Seat 4: kokaboka777 folded on the 3rd Street (didn't bet)
+Seat 5: MOHAPX85 folded on the 3rd Street (didn't bet)
+Seat 6: dolmren showed [Qs 2s 3c 2c 2h Jc 7c] and won (16200) with three of a kind, Deuces
+Seat 7: DallasCorben showed [7h 7d Ks 4s 9s Kc Tc] and lost with two pair, Kings and Sevens
+Seat 8: Y.Strah0vski folded on the 3rd Street (didn't bet)
+
+
+

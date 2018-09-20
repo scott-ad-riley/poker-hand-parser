@@ -1,0 +1,36 @@
+PokerStars Hand #187272856372: Tournament #2320361368, $24.55+$2.45 USD 8-Game (7 Card Stud Limit) - Level V (100/200) - 2018/06/05 12:33:42 PT [2018/06/05 15:33:42 ET]
+Table '2320361368 4' 6-max
+Seat 1: JudiciousJo (3435 in chips) 
+Seat 2: Erneus (3730 in chips) 
+Seat 4: L. Veldhuis (4265 in chips) 
+Seat 5: GTwist (2400 in chips) 
+Seat 6: TxsFrUrMoney (1480 in chips) 
+Erneus: posts the ante 20
+L. Veldhuis: posts the ante 20
+GTwist: posts the ante 20
+TxsFrUrMoney: posts the ante 20
+JudiciousJo: posts the ante 20
+*** 3rd STREET ***
+Dealt to JudiciousJo [Th]
+Dealt to Erneus [4d]
+Dealt to L. Veldhuis [7s Qc 2c]
+Dealt to GTwist [3s]
+Dealt to TxsFrUrMoney [5s]
+L. Veldhuis: brings in for 30
+GTwist: folds 
+TxsFrUrMoney: folds 
+JudiciousJo: folds 
+Erneus: folds 
+Uncalled bet (30) returned to L. Veldhuis
+L. Veldhuis collected 100 from pot
+L. Veldhuis: doesn't show hand 
+*** SUMMARY ***
+Total pot 100 | Rake 0 
+Seat 1: JudiciousJo folded on the 3rd Street (didn't bet)
+Seat 2: Erneus folded on the 3rd Street (didn't bet)
+Seat 4: L. Veldhuis collected (100)
+Seat 5: GTwist folded on the 3rd Street (didn't bet)
+Seat 6: TxsFrUrMoney folded on the 3rd Street (didn't bet)
+
+
+

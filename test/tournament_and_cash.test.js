@@ -23,7 +23,24 @@ const EasternTime = fs.readFileSync(
   'utf8'
 )
 
+const SevenCardStud = fs.readFileSync(
+  __dirname + '/fixtures/7cardStud.txt',
+  'utf8'
+)
+
+const SevenCardStudPre = fs.readFileSync(
+  __dirname + '/fixtures/7cardStudPre.txt',
+  'utf8'
+)
+
+const razzExample = fs.readFileSync(__dirname + '/fixtures/razz.txt', 'utf8')
+
 const StudExample = fs.readFileSync(__dirname + '/fixtures/stud.txt', 'utf8')
+
+const FreerollExample = fs.readFileSync(
+  __dirname + '/fixtures/freeroll.txt',
+  'utf8'
+)
 
 let table
 describe('standard chips game', () => {
@@ -34,6 +51,10 @@ describe('standard chips game', () => {
   beforeEach(() => (table5 = new Table(EightGameExample)))
   beforeEach(() => (table6 = new Table(StudExample)))
   beforeEach(() => (table7 = new Table(EasternTime)))
+  beforeEach(() => (table8 = new Table(razzExample)))
+  beforeEach(() => (table9 = new Table(SevenCardStud)))
+  beforeEach(() => (table10 = new Table(SevenCardStudPre)))
+  beforeEach(() => (table11 = new Table(FreerollExample)))
 
   test('can determine the correct currency for the game', () => {
     expect(table1.currency()).toBe('chips')
@@ -42,6 +63,16 @@ describe('standard chips game', () => {
     expect(table5.currency()).toBe('$')
     expect(table6.currency()).toBe('$')
     expect(table7.currency()).toBe('$')
+    expect(table8.currency()).toBe('chips')
+  })
+
+  test('can determine the hero name', () => {
+    expect(table1.heroName()).toBe('rorrrr')
+    expect(table5.heroName()).toBe('rorrrr')
+    expect(table6.heroName()).toBe('rorrrr')
+    expect(table8.heroName()).toBe('jcarverpoker')
+    expect(table10.heroName()).toBe('L. Veldhuis')
+    expect(table9.heroName()).toBe('L. Veldhuis')
   })
 
   test('correctly determines if the game is a tournament game', () => {
@@ -59,6 +90,7 @@ describe('standard chips game', () => {
     expect(table5.heroStackSize(0)).toEqual({ start: 400 })
     expect(table6.heroStackSize(0)).toEqual({ start: 400 })
     expect(table7.heroStackSize(0)).toEqual({ start: 1600 })
+    expect(table8.heroStackSize(0)).toEqual({ start: 81200 })
   })
 
   test('can determine tournament id if table is tournament', () => {
@@ -67,12 +99,14 @@ describe('standard chips game', () => {
     expect(table3.tournamentID(0)).toEqual(null)
     expect(table5.tournamentID(0)).toEqual(null)
     expect(table7.tournamentID(0)).toEqual(null)
+    expect(table8.tournamentID(0)).toEqual(2378947273)
   })
 
   test('can determine tournament buyin if table is tournament', () => {
     expect(table1.tournamentBuyin(0)).toEqual('$3.32+$0.18')
     expect(table2.tournamentBuyin(0)).toEqual(null)
     expect(table2.tournamentBuyin(1)).toEqual(null)
+    expect(table8.tournamentBuyin(1)).toEqual('$2000+$100')
   })
 
   test('can determine handID for tourny or cash', () => {
@@ -84,6 +118,7 @@ describe('standard chips game', () => {
     expect(table5.handID(0)).toEqual(182620493567)
     expect(table6.handID(0)).toEqual(182639671213)
     expect(table7.handID(0)).toEqual(185644075818)
+    expect(table8.handID(0)).toEqual(190661440240)
   })
 
   test('can fetch the pot size for cash or tourny hand', () => {
@@ -94,6 +129,7 @@ describe('standard chips game', () => {
     expect(table5.potSize(0)).toEqual(50)
     expect(table6.potSize(0)).toEqual(84)
     expect(table7.potSize(0)).toEqual(40)
+    expect(table8.potSize(0)).toEqual(12000)
   })
 
   test('can determine date and time of tourny or cash hand', () => {
@@ -113,6 +149,7 @@ describe('standard chips game', () => {
     expect(table2.seatOccupant(2, 8)).toEqual('Rokep02')
     expect(table6.seatOccupant(0, 1)).toEqual('rorrrr')
     expect(table7.seatOccupant(0, 1)).toEqual('Pitexx')
+    expect(table8.seatOccupant(0, 1)).toEqual('0409479')
   })
 
   test('can determine seat number of button', () => {
@@ -149,6 +186,7 @@ describe('standard chips game', () => {
     expect(table5.gameType(0)).toEqual('Other')
     expect(table6.gameType(0)).toEqual('Other')
     expect(table7.gameType(0)).toEqual("Hold'em No Limit")
+    expect(table8.gameType(0)).toEqual('Other')
   })
 
   test('can determine table name of hand', () => {
@@ -157,6 +195,8 @@ describe('standard chips game', () => {
     expect(table4.tableName(0)).toEqual('2222072970')
     expect(table5.tableName(0)).toEqual('Zerlina')
     expect(table6.tableName(0)).toEqual('Amalia II')
+    expect(table8.tableName(0)).toEqual('2378947273')
+    expect(table11.tableName(0)).toEqual('2292903993')
   })
 
   test('can determine table description for a hand', () => {
@@ -172,6 +212,11 @@ describe('standard chips game', () => {
     expect(table6.tableDescription(0)).toEqual(
       '7 Card Stud Limit ($0.10/$0.20 USD)'
     )
+    expect(table8.tableDescription(0)).toEqual('$2100.00 USD Razz Limit')
+    expect(table9.tableDescription(0)).toEqual('$215.00 USD HORSE')
+    expect(table10.tableDescription(0)).toEqual('$27.00 USD 8-Game')
+    expect(table11.tableDescription(0)).toEqual('Freeroll')
+    // add table 9 n 10
   })
 
   test('can determine table size for a hand', () => {

@@ -254,9 +254,43 @@ class Table {
   }
 
   heroHandDealt(handNumber) {
-    return this.parsedHands[handNumber]
-      .find(line => line.startsWith('Dealt to '))
-      .split('Dealt to ')[1]
+    //// Razz bug
+    if (this.parsedHands[handNumber][0].includes('Razz Limit')) {
+      var array = this.parsedHands[handNumber]
+      array.shift()
+      return array
+        .filter(line => line.includes('['))
+        .sort(function(a, b) {
+          return b.split('[').pop().length - a.split('[').pop().length
+        })[0]
+        .split('Dealt to ')[1]
+    }
+    //// 7cardStud Bug
+    if (this.parsedHands[handNumber][0].includes('7 Card Stud Limit')) {
+      var array = this.parsedHands[handNumber]
+      array.shift()
+      if (array.includes('*** 4th STREET ***')) {
+        return array
+          .slice(0, array.indexOf('*** 4th STREET ***'))
+          .filter(line => line.includes('['))
+          .sort(function(a, b) {
+            return b.split('[').pop().length - a.split('[').pop().length
+          })[0]
+          .split('Dealt to ')[1]
+      } else {
+        return array
+          .slice(0, array.indexOf('*** SUMMARY ***'))
+          .filter(line => line.includes('['))
+          .sort(function(a, b) {
+            return b.split('[').pop().length - a.split('[').pop().length
+          })[0]
+          .split('Dealt to ')[1]
+      }
+    } else {
+      return this.parsedHands[handNumber]
+        .find(line => line.startsWith('Dealt to '))
+        .split('Dealt to ')[1]
+    }
   }
 
   heroLostHand(handNumber) {
@@ -307,26 +341,52 @@ class Table {
 
   tableDescription(handNumber) {
     if (this.isTournament()) {
-      const tournyDesc = tallyBuyin(
-        this.parsedHands[0][0]
-          .split(',')[1]
-          .split('-')[0]
-          .trim()
-      )
-
-      if (tournyDesc == '8') {
-        const EightDesc = '8-Game'
-        if (this.isZoom()) {
-          return 'Zoom - ' + EightDesc
-        } else {
-          return EightDesc
-        }
-      }
-
-      if (this.isZoom()) {
-        return 'Zoom - ' + tournyDesc
+      if (this.parsedHands[0][0].split(',')[1].includes('Freeroll')) {
+        return 'Freeroll'
       } else {
-        return tournyDesc
+        const tournyDesc = tallyBuyin(
+          this.parsedHands[0][0]
+            .split(',')[1]
+            .split('-')[0]
+            .trim()
+        )
+
+        if (this.parsedHands[0][0].split(',')[1].includes('8-Game')) {
+          const EightDesc = '8-Game'
+          if (this.isZoom()) {
+            return 'Zoom - ' + tournyDesc + '-Game'
+          } else {
+            {
+              return tournyDesc + '-Game'
+            }
+          }
+        }
+
+        if (this.isZoom()) {
+          if (
+            this.parsedHands[0][0]
+              .split(',')[1]
+              .split('-')[0]
+              .trim()
+              .includes('HORSE')
+          ) {
+            return 'Zoom - ' + tournyDesc.split('(')[0].trim()
+          } else {
+            return 'Zoom - ' + tournyDesc
+          }
+        } else {
+          if (
+            this.parsedHands[0][0]
+              .split(',')[1]
+              .split('-')[0]
+              .trim()
+              .includes('HORSE')
+          ) {
+            return tournyDesc.split('(')[0].trim()
+          } else {
+            return tournyDesc
+          }
+        }
       }
     } else {
       const cashDesc = this.parsedHands[0][0]
